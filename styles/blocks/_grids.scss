@@ -1,0 +1,36 @@
+.grid {
+  display: grid;
+  gap: 0;
+}
+
+@media (min-width: 600px) {
+  .grid.small {
+    gap: 1.5rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+@media (min-width: 800px) {
+  .grid.medium {
+    gap: 1.5rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid.large {
+    gap: 1.5rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid.extra-large {
+    gap: 1.5rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}

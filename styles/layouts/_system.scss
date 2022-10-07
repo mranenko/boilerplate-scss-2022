@@ -1,0 +1,86 @@
+/*
+  display
+*/
+
+.layout.system header {
+  background: color(white);
+  border-bottom: 1px solid color(border);
+  padding: 2rem;
+}
+
+.layout.system main {
+  background: color(neutral, 1);
+  padding: 2rem;
+}
+
+.layout.system nav {
+  background: color(neutral, 2);
+  padding: 2rem;
+}
+
+.layout.system nav a {
+  display: block;
+  margin: 0 -2rem .5rem;
+  padding: .25rem 2rem;
+}
+
+.layout.system nav a:hover { background: color(neutral, 3); }
+.layout.system nav a.active { font-weight: bold; }
+
+/*
+  grid
+*/
+
+.layout.system {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'nav main';
+  grid-template-columns: 15rem 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.layout.system header { grid-area: header; }
+.layout.system nav { grid-area: nav; }
+.layout.system main { grid-area: main; }
+
+/*
+  colors
+*/
+
+.layout.system .color {
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto 1fr;
+  margin: 0 0 .75rem;
+}
+
+.layout.system .swatch {
+  border-radius: .25rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+.layout.system .swatch.black { background: color(black); }
+.layout.system .swatch.slate { background: color(slate); }
+.layout.system .swatch.taupe { background: color(taupe); }
+.layout.system .swatch.white {
+  background: color(white);
+  border: 1px solid color(border);
+}
+
+.layout.system .swatch.neutral-1 {
+  background: color(neutral, 1);
+  border: 1px solid color(border);
+}
+.layout.system .swatch.neutral-2 {
+  background: color(neutral, 2);
+  border: 1px solid color(border);
+}
+.layout.system .swatch.neutral-3 { background: color(neutral, 3); }
+.layout.system .swatch.neutral-4 { background: color(neutral, 4);}
+.layout.system .swatch.neutral-5 { background: color(neutral, 5); }
+
+.layout.system .swatch.primary-1 { background: color(primary, 1); }
+.layout.system .swatch.primary-2 { background: color(primary, 2);}

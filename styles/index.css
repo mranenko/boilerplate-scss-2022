@@ -1,0 +1,344 @@
+/*
+  color helper functions
+*/
+/*
+  initial colors
+*/
+/*
+  color by name
+*/
+/*
+  color accessor function
+*/
+/*
+  color by element property
+*/
+/*
+  color by element
+*/
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap");
+/*
+  initial fonts
+*/
+/*
+  fonts by group
+*/
+/*
+  font accessor function
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font: normal 16px sans-serif;
+}
+
+body {
+  background: #f0efef;
+  color: #454656;
+  font-family: PT Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+code,
+pre {
+  font-family: Anonymous Pro, monospace;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  white-space: pre-line;
+}
+
+p {
+  margin: 0 0 0.75rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: PT Sans Caption, sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1.125rem;
+}
+
+ol,
+ul {
+  margin: 0 0 1rem 1.5rem;
+}
+
+ol li,
+ul li {
+  margin: 0 0 0.5rem;
+}
+
+/*
+  display
+*/
+.block {
+  display: block;
+  margin: 0 0 0.75rem;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/*
+  margins + spacing
+*/
+.mb-05 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-15 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mt-05 {
+  margin-top: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-15 {
+  margin-top: 1.5rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.card {
+  background: #e5e3e3;
+  border-left: solid 0.25rem #d7d4d3;
+  display: block;
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.button,
+.input.text {
+  border: 0;
+  border-radius: 0.25rem;
+  font: inherit;
+}
+
+.button {
+  background: #676980;
+  color: #f8f7f7;
+  cursor: pointer;
+  padding: 0.75rem 2rem;
+}
+
+.button:hover {
+  background: #58596d;
+}
+
+.input.text {
+  background: #d7d4d3;
+  color: inherit;
+  padding: 0.75rem;
+}
+
+.grid {
+  display: grid;
+  gap: 0;
+}
+
+@media (min-width: 600px) {
+  .grid.small {
+    gap: 1.5rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+@media (min-width: 800px) {
+  .grid.medium {
+    gap: 1.5rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+@media (min-width: 1000px) {
+  .grid.large {
+    gap: 1.5rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .grid.extra-large {
+    gap: 1.5rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+/*
+  display
+*/
+.layout.system header {
+  background: #f8f7f7;
+  border-bottom: 1px solid #d7d4d3;
+  padding: 2rem;
+}
+
+.layout.system main {
+  background: #f0efef;
+  padding: 2rem;
+}
+
+.layout.system nav {
+  background: #e5e3e3;
+  padding: 2rem;
+}
+
+.layout.system nav a {
+  display: block;
+  margin: 0 -2rem 0.5rem;
+  padding: 0.25rem 2rem;
+}
+
+.layout.system nav a:hover {
+  background: #d7d4d3;
+}
+
+.layout.system nav a.active {
+  font-weight: bold;
+}
+
+/*
+  grid
+*/
+.layout.system {
+  display: grid;
+  grid-template-areas: "header header" "nav main";
+  grid-template-columns: 15rem 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.layout.system header {
+  grid-area: header;
+}
+
+.layout.system nav {
+  grid-area: nav;
+}
+
+.layout.system main {
+  grid-area: main;
+}
+
+/*
+  colors
+*/
+.layout.system .color {
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto 1fr;
+  margin: 0 0 0.75rem;
+}
+
+.layout.system .swatch {
+  border-radius: 0.25rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+.layout.system .swatch.black {
+  background: #454656;
+}
+
+.layout.system .swatch.slate {
+  background: #676980;
+}
+
+.layout.system .swatch.taupe {
+  background: #b6b0af;
+}
+
+.layout.system .swatch.white {
+  background: #f8f7f7;
+  border: 1px solid #d7d4d3;
+}
+
+.layout.system .swatch.neutral-1 {
+  background: #f0efef;
+  border: 1px solid #d7d4d3;
+}
+
+.layout.system .swatch.neutral-2 {
+  background: #e5e3e3;
+  border: 1px solid #d7d4d3;
+}
+
+.layout.system .swatch.neutral-3 {
+  background: #d7d4d3;
+}
+
+.layout.system .swatch.neutral-4 {
+  background: #c8c4c3;
+}
+
+.layout.system .swatch.neutral-5 {
+  background: #b6b0af;
+}
+
+.layout.system .swatch.primary-1 {
+  background: #676980;
+}
+
+.layout.system .swatch.primary-2 {
+  background: #58596d;
+}
+
+/*# sourceMappingURL=index.css.map */

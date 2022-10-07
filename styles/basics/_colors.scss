@@ -1,0 +1,77 @@
+/*
+  color helper functions
+*/
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+
+/*
+  initial colors
+*/
+
+$color-slate: #676980;
+$color-taupe: #b6b0af;
+
+
+/*
+  color by name
+*/
+
+$colors: (
+  black: shade($color-slate, 33),
+  slate: $color-slate,
+  taupe: $color-taupe,
+  white: tint($color-taupe, 90),
+
+  neutral: (
+    1: tint($color-taupe, 80),
+    2: tint($color-taupe, 65),
+    3: tint($color-taupe, 45),
+    4: tint($color-taupe, 25),
+    5: $color-taupe,
+  ),
+
+  primary: (
+    1: $color-slate,
+    2: shade($color-slate, 15),
+  ),
+);
+
+
+/*
+  color accessor function
+*/
+
+@function color($keys...) {
+  $value: $colors;
+
+  @each $key in $keys {
+    $value: map-get($value, $key);
+  }
+
+  @return $value;
+}
+
+
+/*
+  color by element property
+*/
+
+$colors: map-merge($colors, (
+  border: color(neutral, 3),
+));
+
+
+/*
+  color by element
+*/
+
+$colors: map-merge($colors, (
+
+));
