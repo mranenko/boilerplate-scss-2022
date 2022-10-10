@@ -50,37 +50,22 @@
 
 .layout.system .color {
   align-items: center;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: auto 1fr;
-  margin: 0 0 .75rem;
+  padding: 1.5rem 2rem;
 }
 
-.layout.system .swatch {
-  border-radius: .25rem;
-  height: 4rem;
-  width: 4rem;
-}
+.layout.system .color.crimson { @include background-color(color(crimson), color(white)); }
+.layout.system .color.sea { @include background-color(color(sea), color(white)); }
+.layout.system .color.slate { @include background-color(color(slate), color(white)); }
+.layout.system .color.taupe { @include background-color(color(taupe), color(black)); }
 
-.layout.system .swatch.black { background: color(black); }
-.layout.system .swatch.slate { background: color(slate); }
-.layout.system .swatch.taupe { background: color(taupe); }
-.layout.system .swatch.white {
-  background: color(white);
-  border: 1px solid color(border);
-}
+.layout.system .color.black { @include background-color(color(black), color(white)); }
+.layout.system .color.white { @include background-color(color(white), color(black)); }
 
-.layout.system .swatch.neutral-1 {
-  background: color(neutral, 1);
-  border: 1px solid color(border);
-}
-.layout.system .swatch.neutral-2 {
-  background: color(neutral, 2);
-  border: 1px solid color(border);
-}
-.layout.system .swatch.neutral-3 { background: color(neutral, 3); }
-.layout.system .swatch.neutral-4 { background: color(neutral, 4);}
-.layout.system .swatch.neutral-5 { background: color(neutral, 5); }
+.layout.system .color.neutral { @include background-color(color(neutral, 1), color(black)); }
+.layout.system .color.neutral-2 { @include background-color(color(neutral, 2), color(black)); }
+.layout.system .color.neutral-3 { @include background-color(color(neutral, 3), color(black)); }
+.layout.system .color.neutral-4 { @include background-color(color(neutral, 4), color(black)); }
+.layout.system .color.neutral-5 { @include background-color(color(neutral, 5), color(black)); }
 
-.layout.system .swatch.primary-1 { background: color(primary, 1); }
-.layout.system .swatch.primary-2 { background: color(primary, 2);}
+.layout.system .color.primary { @include background-color(color(primary, 1), color(white)); }
+.layout.system .color.primary-2 { @include background-color(color(primary, 2), color(white)); }

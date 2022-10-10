@@ -1,6 +1,13 @@
 /*
-  color helper functions
+  color helper functions + mixins
 */
+
+@function contrast($color) {
+  @if (lightness($color) > 40) {
+    @return color(white);
+  }
+  @return color(black);
+}
 
 @function tint($color, $percentage) {
   @return mix(white, $color, $percentage);
@@ -10,11 +17,18 @@
   @return mix(black, $color, $percentage);
 }
 
+@mixin background-color($background, $color: contrast($background)) {
+  background: $background;
+  color: $color;
+}
+
 
 /*
   initial colors
 */
 
+$color-crimson: #de3c4b;
+$color-sea: #388659;
 $color-slate: #676980;
 $color-taupe: #b6b0af;
 
@@ -25,6 +39,8 @@ $color-taupe: #b6b0af;
 
 $colors: (
   black: shade($color-slate, 33),
+  crimson: $color-crimson,
+  sea: $color-sea,
   slate: $color-slate,
   taupe: $color-taupe,
   white: tint($color-taupe, 90),

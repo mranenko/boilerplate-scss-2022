@@ -1,5 +1,5 @@
 /*
-  color helper functions
+  color helper functions + mixins
 */
 /*
   initial colors
@@ -200,12 +200,18 @@ ul li {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
+  .grid.small.gap-0 {
+    gap: 0;
+  }
 }
 @media (min-width: 800px) {
   .grid.medium {
     gap: 1.5rem;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
+  }
+  .grid.medium.gap-0 {
+    gap: 0;
   }
 }
 @media (min-width: 1000px) {
@@ -214,12 +220,18 @@ ul li {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
+  .grid.large.gap-0 {
+    gap: 0;
+  }
 }
 @media (min-width: 1200px) {
   .grid.extra-large {
     gap: 1.5rem;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
+  }
+  .grid.extra-large.gap-0 {
+    gap: 0;
   }
 }
 /*
@@ -282,63 +294,72 @@ ul li {
 */
 .layout.system .color {
   align-items: center;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: auto 1fr;
-  margin: 0 0 0.75rem;
+  padding: 1.5rem 2rem;
 }
 
-.layout.system .swatch {
-  border-radius: 0.25rem;
-  height: 4rem;
-  width: 4rem;
+.layout.system .color.crimson {
+  background: #de3c4b;
+  color: #f8f7f7;
 }
 
-.layout.system .swatch.black {
+.layout.system .color.sea {
+  background: #388659;
+  color: #f8f7f7;
+}
+
+.layout.system .color.slate {
+  background: #676980;
+  color: #f8f7f7;
+}
+
+.layout.system .color.taupe {
+  background: #b6b0af;
+  color: #454656;
+}
+
+.layout.system .color.black {
   background: #454656;
+  color: #f8f7f7;
 }
 
-.layout.system .swatch.slate {
-  background: #676980;
-}
-
-.layout.system .swatch.taupe {
-  background: #b6b0af;
-}
-
-.layout.system .swatch.white {
+.layout.system .color.white {
   background: #f8f7f7;
-  border: 1px solid #d7d4d3;
+  color: #454656;
 }
 
-.layout.system .swatch.neutral-1 {
+.layout.system .color.neutral {
   background: #f0efef;
-  border: 1px solid #d7d4d3;
+  color: #454656;
 }
 
-.layout.system .swatch.neutral-2 {
+.layout.system .color.neutral-2 {
   background: #e5e3e3;
-  border: 1px solid #d7d4d3;
+  color: #454656;
 }
 
-.layout.system .swatch.neutral-3 {
+.layout.system .color.neutral-3 {
   background: #d7d4d3;
+  color: #454656;
 }
 
-.layout.system .swatch.neutral-4 {
+.layout.system .color.neutral-4 {
   background: #c8c4c3;
+  color: #454656;
 }
 
-.layout.system .swatch.neutral-5 {
+.layout.system .color.neutral-5 {
   background: #b6b0af;
+  color: #454656;
 }
 
-.layout.system .swatch.primary-1 {
+.layout.system .color.primary {
   background: #676980;
+  color: #f8f7f7;
 }
 
-.layout.system .swatch.primary-2 {
+.layout.system .color.primary-2 {
   background: #58596d;
+  color: #f8f7f7;
 }
 
 /*# sourceMappingURL=index.css.map */
