@@ -157,6 +157,17 @@ ul li {
   margin-top: 2rem;
 }
 
+/*
+  white-space
+*/
+.ws-normal {
+  white-space: normal;
+}
+
+.ws-pre-line {
+  white-space: pre-line;
+}
+
 .card {
   background: #e5e3e3;
   border-left: solid 0.25rem #d7d4d3;

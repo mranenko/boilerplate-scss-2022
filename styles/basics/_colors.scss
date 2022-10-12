@@ -38,11 +38,12 @@ $color-taupe: #b6b0af;
 */
 
 $colors: (
-  black: shade($color-slate, 33),
   crimson: $color-crimson,
   sea: $color-sea,
   slate: $color-slate,
   taupe: $color-taupe,
+  
+  black: shade($color-slate, 33),
   white: tint($color-taupe, 90),
 
   neutral: (
