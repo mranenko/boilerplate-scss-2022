@@ -5,7 +5,7 @@
   },
   "scripts": {
     "sass": "sass --watch styles",
-    "server": "live-server --port=20222",
+    "server": "live-server --open=system/index.html --port=20222",
     "start": "npm run sass & npm run server"
   }
 }
