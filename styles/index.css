@@ -158,6 +158,13 @@ ul li {
 }
 
 /*
+  small
+*/
+.small {
+  font-size: 0.875rem;
+}
+
+/*
   white-space
 */
 .ws-normal {
@@ -245,6 +252,17 @@ ul li {
     gap: 0;
   }
 }
+.tooltip {
+  background: #d7d4d3;
+  color: #454656;
+  border-radius: 1.5rem;
+  display: inline-block;
+  font-family: PT Sans, sans-serif;
+  font-size: 0.875rem;
+  margin: 0 0.25rem;
+  padding: 0.25rem 0.75rem;
+}
+
 /*
   display
 */

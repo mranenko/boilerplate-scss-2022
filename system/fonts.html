@@ -10,7 +10,10 @@
   <body class="layout system">
     <header>
       <a href="../index.html">
-        <h1 class="title">Boilerplate SCSS</h1>
+        <h1 class="title">
+          Boilerplate SCSS
+          <span class="tooltip">developer edition</span>
+        </h1>
       </a>
     </header>
 
@@ -23,34 +26,53 @@
       <a href="cards.html">Cards</a>
       <a href="forms.html">Forms</a>
       <a href="grids.html">Grids</a>
+      <a href="tooltips.html">Tooltips</a>
     </nav>
 
     <main>
       <h2 class="title">Fonts</h2>
 
-      <h3 class="subtitle">Monospace</h3>
-      <code class="card">--font-family-monospace
-        'Anonymous Pro', monospace</code>
-      <code class="block ws-normal">
-        Knausgaard slow-carb drinking vinegar, biodiesel authentic helvetica hell of. Scenester trust fund small batch,
-        raclette literally man braid vice crucifix slow-carb. Swag pinterest mukbang, shoreditch PBR&B celiac succulents
-        copper mug ramps jean shorts iPhone glossier try-hard 3 wolf moon. Brunch sustainable etsy church-key taxidermy
-        squid crucifix plaid ethical shaman stumptown narwhal pinterest.
-      </code>
+      <h3 class="subtitle">Headings</h3>
+      <code class="card"
+        >font-family: font(title, family); // 'PT Sans Caption', sans-serif font-weight: font(title, weight); // 400
+        line-height: font(title, line-height); // 1.25</code
+      >
 
-      <h3 class="subtitle mt-1">Headings</h3>
-      <code class="card">--font-family-title
-        'PT Sans Caption', sans-serif</code>
-      <h1>Heading one</h1>
-      <h2>Heading two</h2>
-      <h3>Heading three</h3>
-      <h4>Heading four</h4>
-      <h5>Heading five</h5>
-      <h6>Heading six</h6>
+      <h1>
+        Heading one
+        <span class="tooltip">3rem = 48px</span>
+      </h1>
+
+      <h2>
+        Heading two
+        <span class="tooltip">2.5rem = 40px</span>
+      </h2>
+
+      <h3>
+        Heading three
+        <span class="tooltip">2rem = 32px</span>
+      </h3>
+
+      <h4>
+        Heading four
+        <span class="tooltip">1.5rem = 24px</span>
+      </h4>
+
+      <h5>
+        Heading five
+        <span class="tooltip">1.25rem = 20px</span>
+      </h5>
+
+      <h6>
+        Heading six
+        <span class="tooltip">1.125rem = 18px</span>
+      </h6>
 
       <h3 class="subtitle mt-1">Text</h3>
-      <code class="card">--font-family-text
-        'PT Sans', sans-serif</code>
+      <code class="card"
+        >font-family: font(text, family); // 'PT Sans', sans-serif font-size: font(text, size); // 1rem = 16px
+        font-weight: font(text, weight); // 400 line-height: font(text, line-height); // 1.5</code
+      >
       <p>
         Shoreditch hell of yes plz mumblecore. Distillery green juice kitsch live-edge, air plant copper mug JOMO
         chicharrones big mood kombucha. Quinoa coloring book keffiyeh, jianbing +1 tilde gastropub DSA cold-pressed vice
@@ -65,6 +87,29 @@
         live-edge la croix, viral gluten-free tofu deep v lyft jean shorts man bun craft beer air plant affogato
         helvetica kale chips. Migas wayfarers mixtape before they sold out man bun same praxis freegan succulents
         tumeric palo santo.
+      </p>
+
+      <h3 class="subtitle mt-1">Monospace</h3>
+      <code class="card"
+        >font-family: font(monospace, family); // 'Anonymous Pro', monospace font-size: font(monospace, size); //
+        .875rem = 14px</code
+      >
+      <code class="block ws-normal">
+        Knausgaard slow-carb drinking vinegar, biodiesel authentic helvetica hell of. Scenester trust fund small batch,
+        raclette literally man braid vice crucifix slow-carb. Swag pinterest mukbang, shoreditch PBR&B celiac succulents
+        copper mug ramps jean shorts iPhone glossier try-hard 3 wolf moon. Brunch sustainable etsy church-key taxidermy
+        squid crucifix plaid ethical shaman stumptown narwhal pinterest.
+      </code>
+
+      <h3 class="subtitle mt-1">Small</h3>
+      <code class="card">font-size: font(small, size); // .875rem = 14px</code>
+      <p class="small">
+        Ugh brunch edison bulb skateboard helvetica. Shoreditch craft beer air plant, ugh tilde austin trust fund
+        taiyaki glossier keytar. Street art same disrupt vexillologist enamel pin. Lyft retro JOMO, gluten-free
+        cold-pressed health goth ugh subway tile knausgaard vaporware pork belly master cleanse DIY craft beer. Big mood
+        kitsch live-edge, +1 la croix hot chicken viral green juice banjo selvage af. Brooklyn street art ennui cray
+        hexagon, swag stumptown mustache jean shorts tofu JOMO deep v readymade pop-up. Wolf subway tile tumeric man bun
+        chia asymmetrical.
       </p>
     </main>
   </body>

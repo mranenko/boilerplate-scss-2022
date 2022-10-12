@@ -9,6 +9,7 @@
 .inline { display: inline; }
 .inline-block { display: inline-block; }
 
+
 /*
   margins + spacing
 */
@@ -22,6 +23,13 @@
 .mt-1 { margin-top: 1rem; }
 .mt-15 { margin-top: 1.5rem; }
 .mt-2 { margin-top: 2rem; }
+
+
+/*
+  small
+*/
+
+.small { font-size: font(small, size); }
 
 
 /*
